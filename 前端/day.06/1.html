@@ -6,7 +6,7 @@
     <style>
         div{
             width: 200px;
-            height: 200px;
+            /*height: 200px;*/
         }
         .box1{
             background: darkgoldenrod;
@@ -19,14 +19,17 @@
                     b。碰到前面有浮动的元素会停止（紧跟在浮动元素之后排列 ）
                     c。碰到未浮动的元素
                 3.浮动会把元素转换成行内块元素(让元素并在一起)
+                4.当父级元素没有设置固定高度时，子元素都浮动，父级元素的高度就无法被撑开
+                    给父级元素添加overflow：hidden
+                5. 当父级元素不够时。浮动元素会换行显示
             */
             /*float:left;*/
-            float:right;
+            /*float:right;*/
         }
         .box2{
             width: 220px;
             background-color: aqua;
-            float: left;
+            /*float: left;*/
         }
         .box3{
             width: 230px;
@@ -35,7 +38,31 @@
         .box4{
             /*碰到未浮动的元素*/
             background-color: palevioletred;
+            /*float:left;*/
+        }
+        .warp{
+            border: salmon dashed 3px;
+            width: 300px;
+            overflow: hidden;
+        }
+        .item1{
+            width: 100px;
+            height: 100px;
+            background: blue;
             float:left;
+            
+        }
+        .item2{
+            width: 100px;
+            height: 100px;
+            background: pink;
+            float: left;
+        }
+        .item3{
+            width: 200px;
+            height: 100px;
+            background: yellow;
+            float: left;
         }
     </style>
 </head>
@@ -44,6 +71,12 @@
     <div class="box2">box2</div>
     <div class="box3">box3</div>
     <div class="box4">box4</div>
+    
+    <div class="warp">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item3">3</div>
+    </div>
 
 </body>
 </html>

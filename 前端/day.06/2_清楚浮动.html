@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>清楚浮动</title>
+    <style>
+        .wrap{
+            border:5px deeppink dotted;
+            /*清除浮动解决父级元素无法撑开的问题
+                    注意：是给浮动元素的父级添加的
+            */
+            /*overflow:hidden;*/
+        }
+        /*.wrap:after{*/
+            /*content: '';*/
+            /*display:table;*/
+            /*clear: both;*/
+        /*}*/
+        .c1{
+            clear: both;
+        }
+        .box1{
+                        width: 200px;
+            height: 200px;
+            background: rebeccapurple;
+            float:left;
+        }
+        .box2{
+            width: 200px;
+            height: 200px;
+            background: red;
+            float:left;
+        }
+        .box3{
+            width: 200px;
+            height: 200px;
+            background: rosybrown;
+            float:left;
+        }
+        .box4{
+            width: 200px;
+            height: 200px;
+            background: royalblue;
+            float:left;
+            /*清除浮动 clean:
+                            left清除左浮动
+                            right清除右浮动
+                            both清除两边的浮动
+            */
+            /*clear: both;*/
+
+        }
+        .box5{
+            width: 200px;
+            height: 200px;
+            background: wheat;
+            float:left;
+        }
+        .box6{
+            width: 200px;
+            height: 200px;
+            background: palegreen;
+            float:left;
+        }
+        .box7{
+            width: 200px;
+            height: 200px;
+            background: lime;
+            float:left;
+        }
+    </style>
+</head>
+<body>
+      <div class="wrap">
+        <div class="box1">1</div>
+        <div class="box2">2</div>
+        <div class="box3">3</div>
+        <div class="box4">4</div>
+        <div class="box5">5</div>
+        <div class="box6">6</div>
+        <div class="box7">7</div>
+          <div class="c1"></div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>定位</title>
+    <style>
+        /*清除默认的内外边距*
+        */
+         *{margin: 0;padding: 0;}
+        .box1{
+            width:200px;
+            height:200px;
+            background-color:red;
+           margin: 20px;
+            /*通过position：来设置元素的定位
+                relative:相对定位
+                    以元素本身位置未参考点进行偏移
+                    不会脱离文档流
+            */
+            position: relative;
+            left: 100px;
+            top: 100px;
+            /*设置定位的层级 谁在后面定位谁就在上面
+                改变层级使用 z-index:
+            */
+
+            z-index: 2;
+
+        }
+        .box4{
+            width:200px;
+            height:200px;
+            background-color:deeppink;
+           margin: 20px;
+            position: absolute;
+            left:100px;
+            top:100px;
+            /*设置定位的层级 谁在后面定位谁就在上面
+                改变层级使用 z-index:
+            */
+
+
+        }
+        .wrap{
+            width: 300px;
+            height:300px;
+            border: 2px dashed darkcyan;
+            position: relative;
+            margin: 236px;
+        }
+        .box2{
+            width: 180px;
+            height: 180px;
+            background: palegreen;
+            /*设置绝对定位
+                position：absolute
+                        以有点位属性的父级为参考点进行偏移，
+                        如果父级元素没有定位属性，继续向上一级元素找
+                        如果找到就以上上一级元素为参考点进行偏移
+                        如果找不到就一直向上查找，
+                        如果没有那就以body为参考点进行偏移
+                    会脱离文档流
+            */
+            position:absolute;
+            left: 100px;
+            top: 100px;
+        }
+        .box3{
+            width:200px;
+            height: 200px;
+            background: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box4"></div>
+     <div class="wrap">
+        <div class="box2"></div>
+        <div class="box3"></div>
+     </div> 
+</body>
+</html>
