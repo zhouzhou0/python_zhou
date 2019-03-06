@@ -16,8 +16,9 @@
                 1.浮动会让元素脱离文档流，后面不浮动的元素会占据原来的位置
                 2.停止浮动：
                     a。碰到父级元素的边界会停止
-                    b。碰到前面有浮动的元素会停止
-                2.浮动会把元素转换成行内块元素(让元素并子啊一行)
+                    b。碰到前面有浮动的元素会停止（紧跟在浮动元素之后排列）
+                    c。碰到未浮动的元素
+                3.浮动会把元素转换成行内块元素(让元素并在一起)
             */
             /*float:left;*/
             float:right;
@@ -31,12 +32,18 @@
             width: 230px;
             background: yellow;
         }
+        .box4{
+            /*碰到未浮动的元素*/
+            background-color: palevioletred;
+            float:left;
+        }
     </style>
 </head>
 <body>
     <div class="box1">box1</div>
     <div class="box2">box2</div>
     <div class="box3">box3</div>
+    <div class="box4">box4</div>
 
 </body>
 </html>
