@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>batman</title>
+    <style>
+        a{
+            font-size: 30px;
+            /*去下划线*/
+            text-decoration: none;
+            /*text-decoration:underline;添加下划线*/
+            /*添加上划线*/
+            /*text-decoration:overline;*/
+            /*删除线 贯穿线*/
+            text-decoration:line-through;
+        }
+        /*未访问的链接*/
+        a:link{
+            color: brown;
+        }
+        /*组选择器*/
+        .q1,.q2{
+            width: 90%;
+            height: 90%;
+            display: none;
+        }
+        /*伪类选择器 active 鼠标点击时显示*/
+        /*兄弟选择器 两个标签必须紧密相邻才可以使用*/
+        .btm:active + .q1{
+            display: block;
+        }
+        /* ~匹配选择器 只要元素在同一标签下都可以找到*/
+        .car:hover ~.q2{
+            display: block;
+        }
+        /*已访问的链接*/
+        a:visited{
+            color: #4c55c1;
+        }
+    </style>
+</head>
+<body>
+    <a class="btm" href="">batman</a>
+    <img class="q1"  src="./batman.jpeg">
+    <a class="car" href="">car</a>
+
+    <img  class="q2" src="./car.jpg">
+</body>
+</html>
