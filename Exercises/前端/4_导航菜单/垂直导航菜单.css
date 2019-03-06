@@ -1,0 +1,23 @@
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: darkkhaki;
+    width: 500px;
+    height: 150px;
+}
+
+li a{
+    text-decoration: none;
+    display: block;
+}
+ul li{
+    line-height: 32px;
+}
+a:hover{
+
+    background-color: #9B9B9B;
+}
+a:active{
+    background: blueviolet;
+}

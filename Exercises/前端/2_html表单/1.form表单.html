@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表单</title>
+</head>
+<body>
+    <form action="#" method="post" enctype="multipart/form-data">
+        <!--<lable>标签定义文本标注; type=text普通文本-->
+
+        <p>
+            <label>用户名:</label><input type="text" name="username" value="">
+        </p>
+        <P>
+            <label>密码：</label><input type="password" name="password" value="">
+        </p>
+
+
+
+        <!--type=radio 定义单选框-->
+        <p>
+
+            <label>性别：</label>
+            <label><input type="radio" name="sex" value="1">男</label>
+            <label><input type="radio" name="sex" value="2">女</label>
+
+        </p>
+
+        <!--textarea 标签定义多行文本框-->
+        <p>
+
+            <label>说明:</label>
+            <textarea name="s"></textarea>
+
+        </p>
+        <!--select 标签定义一个下拉选框-->
+        <p>
+            <label>位置：</label>
+            <select name="seit">
+                <option value="0">上海</option>
+                <option value="1">北京</option>
+                <option value="2">深圳</option>
+            </select>
+
+        </p>
+        <!--type=checkbox标签定义多选框-->
+        <p>
+            <lable>爱好:</lable>
+            <label><input type="checkbox"name="like" value="1">打球 </label>
+            <label><input type="checkbox"name="like" value="2">看书</label>
+        </p>
+            <button>提 交</button><!--form表单中的ｂｕｔｔｏｎ具有提交功能-->
+
+        <!--type=sunmit 定义提交按钮；type=reset定义重置按钮-->
+        <P>
+            <input type="submit"name="注册" value="注册"> <input type="reset" name="reset" value="重置">
+        </P>
+    </form>
+
+</body>
+</html>

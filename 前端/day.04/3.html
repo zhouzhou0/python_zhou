@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>设置边框属性</title>
+    <style>
+        .item {
+            width: 200px;
+            height: 200px;
+            /*
+                border设置边框
+                注意 设置边框的时候，三个属性 一个都不能丢
+
+
+            */
+            /*border: 2px solid pink;*/
+            /*border: #112233 2px dotted;*/
+            border: dashed 3px #00ff00;
+
+        }
+        .item2{
+            width:200px;
+            height:200px;
+            /*单独设置上边框*/
+            border-top: red solid 2px;
+            /*单独设置下边框*/
+            border-bottom: pink dashed 2px;
+            /*单独设置左边框*/
+            border-left:blue dotted 2px;
+            /*单独设置右边框*/
+            border-right:yellow dotted 2px;
+        }
+        .item3{
+            /*
+                边框的圆角设置
+                border-radius设置圆角
+                给一个值是设置四个角的圆角属性
+                如果给四个值：
+                    第一个值设置左上角
+                    第二个值设置右上角
+                    第三个值设置右下角
+                    第四个值设置左下角
+                    (顺时针方向)
+                如果给两个值
+                    设置对角
+                    第一个值设置左上角和右下角
+                    第二个值设置右上角和左下角
+             */
+            width:300px;
+            height:300px;
+            border: greenyellow 5px solid;
+            /*设置一个圆*/
+            /*border-radius: 50%;*/
+            border-radius:30px 50px 70px 90px;
+
+        }
+        .item4{
+            /*
+                box-shadow 设置阴影
+                    第一个值设置水平方向偏移 正值往右偏移 负值往左
+                    第二个值设置垂直方向偏移 正直往下 负值往上
+                    第三个值设置模糊程度
+                    第四个值设置扩散范围
+                    第五个值设置阴影颜色
+                    第六个值设置是否为内阴影 如果为内阴影 设置inset
+                            如果不设置内阴影可以不写
+            */
+            width: 200px;
+            height:200px;
+            border:blueviolet 2px solid;
+            /*box-shadow:-10px 10px 20px 10px red inset ;*/
+
+        }
+        .item4:hover{
+            box-shadow:10px 10px 15px 15px orange;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="item">
+
+    </div>
+    <br>
+    <div class="item2"></div>
+    <br>
+    <div class="item3"></div>
+    <br>
+    <div class="item4"></div>
+</body>
+</html>

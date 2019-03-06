@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>盒子模型</title>
+    <style>
+        .box1{
+            width:100px;
+            height:100px;
+            background: pink;
+            border: 10px rebeccapurple solid;
+            padding: 10px;
+            margin: 10px;
+        /*
+            由此看出我们的盒子的实际大小是
+            盒子的高度：内容高度+上下
+            边框+padding
+            盒子的宽度：内容宽度+左右边框+padding
+
+        */
+
+        }
+        .box2,.box3{
+            width:100px;
+            height:100px;
+            background: yellowgreen;
+
+        }
+        .box2{
+            padding:20px;
+        }
+        .box3{
+            padding:20px;
+            /*想改变元素距离内容的间距，但是又不想改变盒子的大小*/
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box1">hello</div>
+    <div class="box2">hello</div>
+    <div class="box3">hello</div>
+
+</body>
+</html>

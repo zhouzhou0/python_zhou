@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>html常用的行级元素</title>
+    </head>
+    <body>
+        <!--链接标签
+            a 标签 href属性，跟的是要跳转的网站
+                  target:_blank 在新窗口打开跳转的页面
+            -->
+            <a href="http://www.baidu.com">百度</a>
+
+            <a href="./复习html.html" target="_blank">跳到本地的文件（复习html.html）</a>
+
+            <!--路径问题 在世界开发当中建议使用相对路径 ./当前路径 ../上目录-->
+            <!--绝对路径 在windows中绝对路径的根是我们文件所在的盘符
+            /home/tlxy/PycharmProjects/untitled2/pycharm/前端/day.02/复习html.html
+            -->
+        <!--图像标签  img标签(单标签 不需要闭合)
+            src :图片的地址（网络资源或是本地资源）
+            alt :用于图片加载失败的替代文字（必须存在）
+            title : 鼠标悬停在图片上的提示信息（可写可不写）
+            width: 设置图片的宽度
+            height：设置图片的高度
+            注意：一般我们只给图片设置宽度或者只设置高度，那高度或者宽度会等比例放大或是缩小
+
+        -->
+            <img src="http://pic30.photophoto.cn/20140322/0038038005467212_b.jpg" width="300px" height="300px" alt="图片加载失败" title="汽车图片">
+
+            <img src="./u=2640393967,721831803&fm=26&gp=0.jpg" alt="图片加载失败">
+        <br>
+        <!--有语义文本标签-->
+            <!--b 加粗-->
+            <!--i 斜体-->
+            <!--strong  加粗 具有强调意义 -->
+            <!--em 斜体 具有强调意义-->
+            <b>src</b> :图片的地址（网络资源或是本地资源）<br>
+            <i>alt</i> :用于图片加载失败的替代文字（必须存在）<br>
+            <strong>title</strong> : 鼠标悬停在图片上的提示信息（可写可不写）<br>
+            <em>   width</em>: 设置图片的宽度<br>
+            height：设置图片的高度<br>
+            注意：一般我们只给图片设置宽度或者只设置高度，那高度或者宽度会等比例放大或是缩小<br>
+        <!--span 无语义的行级元素 一般span标签也是配合css使用，来设置文本当中一部分内容-->
+            <span style="color:green"> 注意</span>:一般我们只给图片设置宽度或者只设置高度，那高度或者宽度会等比例放大或是缩小<br>
+        <!--html当中的实体字符 &gt;:大于号  &lt;:小于号  &nbsp;:空格 &copy;-->
+            2>1; <br>
+            2&gt;1; <br>
+            1&lt;2; <br>
+            注&nbsp;&nbsp;&nbsp;&nbsp;意：一般我们只给图片设置宽度或者只设置高度，那高度或者宽度会等比例放大或是缩小<br>
+            &copy;这个是注册商标
+
+    </body>
+</html>

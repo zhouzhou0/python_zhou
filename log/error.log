@@ -1,0 +1,4 @@
+%(asctime)s - %(level)s - %(message)s
+%(asctime)s - %(level)s - %(message)s
+2019-03-03 16:23:27,376 - ERROR - 02.py[:43]- error message
+2019-03-03 16:23:27,428 - CRITICAL - 02.py[:44]- critical message

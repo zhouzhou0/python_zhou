@@ -1,0 +1,73 @@
+
+
+.dh1{
+    width:80%;
+    height: 700px;
+    background-color:darkkhaki;
+    margin:0 auto;
+
+}
+.dh2{
+    width:80%;
+    height: 700px;
+    background-color:lemonchiffon;
+    margin:0 auto;
+
+}
+.dh3{
+    width:80%;
+    height: 700px;
+    background-color:darksalmon;
+    margin:0 auto;
+
+}
+.dh4{
+    width:80%;
+    height: 700px;
+    background-color:aqua;
+    margin:0 auto;
+
+}
+.dh5{
+    width:80%;
+    height: 700px;
+    background-color:gold;
+    margin:0 auto;
+
+
+}
+ul {
+    list-style-type: none; /*去掉序列的 默认样式*/
+}
+a{
+    text-decoration: none;
+}
+ul li{
+    text-align: center; /*设置文本水平居中*/
+    margin: 6px;
+    /*设置行高*/
+    line-height: 20px;
+}
+ul li a{
+    display:block;
+    width: 85px;
+    height: 20px;
+    background: #4c55c1;
+}
+/*定位到右侧底部，相对窗口定位*/
+.menu{
+    position: fixed;
+    right: 20px;
+    top:70%;
+}
+ul li img{
+    display: none;
+}
+ul li .vx:hover +img{
+    display: block;
+    position: fixed;
+    right: 150px;
+    top: 70%;
+    background: #9B9B9B;
+;
+}
