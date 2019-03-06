@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>浮动</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+        }
+        .box1{
+            background: darkgoldenrod;
+            /*浮动
+                左浮动：float：left；
+                右浮动：float：right；
+                1.浮动会让元素脱离文档流，后面不浮动的元素会占据原来的位置
+                2.停止浮动：
+                    a。碰到父级元素的边界会停止
+                    b。碰到前面有浮动的元素会停止
+                2.浮动会把元素转换成行内块元素(让元素并子啊一行)
+            */
+            /*float:left;*/
+            float:right;
+        }
+        .box2{
+            width: 220px;
+            background-color: aqua;
+            float: left;
+        }
+        .box3{
+            width: 230px;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+
+</body>
+</html>
