@@ -17,7 +17,7 @@ UserAgent=random.choice(headers_list)
 def mz_spider(base_url,headers):
     res=requests.get(base_url,headers)
     html=etree.HTML(res.text)
-    #获取详情页信息
+    # 获取详情页信息
     # img_src=html.xpath('//div[@class="footer"]/a/@href')
     img_src = html.xpath('//div[@class="postlist"]/ul/li/a/@href')
     for img_url in img_src:
