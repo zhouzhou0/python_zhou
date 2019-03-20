@@ -34,8 +34,8 @@ opener=request.build_opener(cookie_handler,http_handler,https_handler)
 
 def login(url):
     data={
-        'userName':'shuaibin-zhou',
-        'pwd':'zhou@123.',
+        'userName':'xxxx',
+        'pwd':'xxxx.',
         'languages':'zh',
         'fromsite':'www.huawei.com',
         'authMethod':'password',
