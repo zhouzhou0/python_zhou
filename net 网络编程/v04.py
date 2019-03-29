@@ -1,7 +1,7 @@
 import socket
 
 def tcp_srv():
-    # 1.建立socket负值具体的通信，这个socket其实只负责接受对方的请求，真正的通信是链接后新建立的socket
+    # 1.建立socket负值具体的通信， 这个socket其实只负责接受对方的请求，真正的通信是链接后新建立的socket
     # 需要用到两个参数
     # AF_INET:含义同udp一致
     # SOCK_STREAM:表明使用tcp进行通信
