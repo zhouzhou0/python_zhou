@@ -2,7 +2,7 @@
 	-- 创建一个数据库
 	create database python_test charset=utf8;
 
-	-- 使用一个数据库
+	-- 使用一个数据 库
 	use python_test;
 
 	-- 显示使用的当前数据是哪个?

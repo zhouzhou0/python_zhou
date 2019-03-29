@@ -4,7 +4,7 @@
     mysql -uroot -p
     mysql -uroot -pmysql
 
-    -- 退出数据库
+    --  退出数据库
     exit/quit/ctrl+d
     
 
