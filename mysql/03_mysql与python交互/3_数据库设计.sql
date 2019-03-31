@@ -1,0 +1,51 @@
+数据库的设计
+
+
+创建 "商品分类" 表(之前已经创建,无需再次创建)
+create table goods_cates(
+    id int unsigned primary key auto_increment not null,
+    name varchar(40) not null
+);
+创建 "商品品牌" 表(之前已经创建,无需再次创建)
+create table goods_brands (
+    id int unsigned primary key auto_increment not null,
+    name varchar(40) not null
+);
+创建 "商品" 表(之前已经创建,无需再次创建)
+create table goods(
+    id int unsigned primary key auto_increment not null,
+    name varchar(40) default '',
+    price decimal(5,2),
+    cate_id int unsigned,
+    brand_id int unsigned,
+    is_show bit default 1,
+    is_saleoff bit default 0,
+    foreign key(cate_id) references goods_cates(id),
+    foreign key(brand_id) references goods_brands(id)
+);
+创建 "顾客" 表
+create table customer(
+    id int unsigned auto_increment primary key not null,
+    name varchar(30) not null,
+    addr varchar(100),
+    tel varchar(11) not null
+);
+创建 "订单" 表
+create table orders(
+    id int unsigned auto_increment primary key not null,
+    order_date_time datetime not null,
+    customer_id int unsigned,
+    foreign key(customer_id) references customer(id)
+);
+创建 "订单详情" 表
+create table order_detail(
+    id int unsigned auto_increment primary key not null,
+    order_id int unsigned not null,
+    goods_id int unsigned not null,
+    quantity tinyint unsigned not null,
+    foreign key(order_id) references orders(id),
+    foreign key(goods_id) references goods(id)
+);
+说明
+以上创建表的顺序是有要求的,即如果goods表中的外键约束用的是goods_cates或者是goods_brands,那么就应该先创建这2个表,否则创建goods会失败
+创建外键时,一定要注意类型要相同,否则失败

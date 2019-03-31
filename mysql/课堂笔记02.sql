@@ -2,7 +2,7 @@
 	-- 创建一个数据库
 	create database python_test charset=utf8;
 
-	-- 使用一个数据 库
+	-- 使用一个数据库
 	use python_test;
 
 	-- 显示使用的当前数据是哪个?
@@ -289,6 +289,7 @@
 	-- limit start, count
 
 	-- 限制查询出来的数据个数
+  -- limit 后面的第一个数字表示起始位置，第二个数字表示要显示出多少条数据
 	select * from students where gender=1 limit 2;
 
 	-- 查询前5个数据
